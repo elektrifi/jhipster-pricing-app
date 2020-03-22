@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jhipsterpricingapp-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/jhipsterPricingApp/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=jhipsterPricingApp
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
